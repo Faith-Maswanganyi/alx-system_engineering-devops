@@ -1,2 +1,2 @@
-#!/bin/bash
-echo $((`echo $PATH | grip -o "
+#! bin/bash
+echo $((echo $PATH | grep -o ":/" | WC -I'+ 1))
